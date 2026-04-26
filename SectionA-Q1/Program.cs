@@ -29,13 +29,11 @@ namespace SectionA_Q1
             Console.WriteLine("Total Marks: " + totalMarks);
 
             double aveMarks = totalMarks / 3.0;
-            Console.WriteLine($"Average Marks: {aveMarks:F2}");
+            Console.WriteLine($"Average Marks: {aveMarks:F2}"); //F2 means 2 decimal places
 
             // Determine pass or fail based on average marks
             bool isPassed = aveMarks >= 50;
             Console.WriteLine("Pass Status: " + (isPassed ? "Passed" : "Failed"));  //condition? true:false
-
-
 
         }
     } 
