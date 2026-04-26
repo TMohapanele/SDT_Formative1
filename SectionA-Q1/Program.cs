@@ -21,6 +21,22 @@ namespace SectionA_Q1
             int mark3 = int.Parse(Console.ReadLine());
 
             Console.WriteLine("=== STUDENT RESULTS ===");
+
+            //Output
+            Console.WriteLine("Student Name: " + name);
+
+            int totalMarks = mark1 + mark2 + mark3;
+            Console.WriteLine("Total Marks: " + totalMarks);
+
+            double aveMarks = totalMarks / 3.0;
+            Console.WriteLine($"Average Marks: {aveMarks:F2}");
+
+            // Determine pass or fail based on average marks
+            bool isPassed = aveMarks >= 50;
+            Console.WriteLine("Pass Status: " + (isPassed ? "Passed" : "Failed"));  //condition? true:false
+
+
+
         }
     } 
 }
