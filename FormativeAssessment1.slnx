@@ -2,4 +2,5 @@
   <Project Path="SectionA-Q1/SectionA-Q1.csproj" />
   <Project Path="SectionA-Q2/SectionA-Q2.csproj" Id="3a3f7048-0ec6-4c0f-a9d6-6a0b32307453" />
   <Project Path="SectionA-Q3/SectionA-Q3.csproj" Id="84aab353-49db-4403-ab13-9c17d09faaf0" />
+  <Project Path="SectionB-Q1/SectionB-Q1.csproj" Id="664997ed-6453-403f-967c-3e4323dc3ad3" />
 </Solution>
