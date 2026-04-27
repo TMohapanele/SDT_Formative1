@@ -9,7 +9,7 @@ namespace SectionA_Q1
             Console.Write("Enter student name: ");
             string name = Console.ReadLine();
 
-            Console.WriteLine("Hello, " + name);
+            Console.WriteLine("\nHello, " + name);
 
             Console.Write("Enter mark for Subject 1: ");
             int mark1 = int.Parse(Console.ReadLine());
@@ -20,7 +20,7 @@ namespace SectionA_Q1
             Console.Write("Enter mark for Subject 3: ");
             int mark3 = int.Parse(Console.ReadLine());
 
-            Console.WriteLine("=== STUDENT RESULTS ===");
+            Console.WriteLine("\n=== STUDENT RESULTS ===");
 
             //Output
             Console.WriteLine("Student Name: " + name);
