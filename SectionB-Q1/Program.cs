@@ -27,7 +27,7 @@
             residents.Add(new Resident(name, address, acc, usage));
         }
 
-        Console.Write("Enter number of service requests: ");
+        Console.Write("\nEnter number of service requests: ");
         int numRequests = int.Parse(Console.ReadLine());
 
         for (int i = 0; i < numRequests; i++)
