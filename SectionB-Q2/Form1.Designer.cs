@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            label1 = new Label();
+            lblTitle = new Label();
             lblName = new Label();
             lblID = new Label();
             lblCitizen = new Label();
@@ -42,17 +42,17 @@
             cmbCitizen = new ComboBox();
             SuspendLayout();
             // 
-            // label1
+            // lblTitle
             // 
-            label1.AutoSize = true;
-            label1.BackColor = Color.AntiqueWhite;
-            label1.Font = new Font("Segoe UI Semibold", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.ForeColor = Color.Teal;
-            label1.Location = new Point(112, 9);
-            label1.Name = "label1";
-            label1.Size = new Size(475, 41);
-            label1.TabIndex = 0;
-            label1.Text = "Home Affairs Digital ID Processor";
+            lblTitle.AutoSize = true;
+            lblTitle.BackColor = Color.AntiqueWhite;
+            lblTitle.Font = new Font("Segoe UI Semibold", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblTitle.ForeColor = Color.Teal;
+            lblTitle.Location = new Point(112, 9);
+            lblTitle.Name = "lblTitle";
+            lblTitle.Size = new Size(475, 41);
+            lblTitle.TabIndex = 0;
+            lblTitle.Text = "Home Affairs Digital ID Processor";
             // 
             // lblName
             // 
@@ -102,7 +102,7 @@
             // 
             btnValidate.BackColor = Color.Teal;
             btnValidate.ForeColor = SystemColors.Control;
-            btnValidate.Location = new Point(174, 236);
+            btnValidate.Location = new Point(174, 223);
             btnValidate.Name = "btnValidate";
             btnValidate.Size = new Size(94, 29);
             btnValidate.TabIndex = 7;
@@ -114,7 +114,7 @@
             // 
             lblisValid.AutoSize = true;
             lblisValid.BackColor = Color.AntiqueWhite;
-            lblisValid.Location = new Point(174, 268);
+            lblisValid.Location = new Point(174, 255);
             lblisValid.Name = "lblisValid";
             lblisValid.Size = new Size(0, 20);
             lblisValid.TabIndex = 8;
@@ -165,7 +165,7 @@
             Controls.Add(lblCitizen);
             Controls.Add(lblID);
             Controls.Add(lblName);
-            Controls.Add(label1);
+            Controls.Add(lblTitle);
             Name = "Form1";
             Text = "Form1";
             ResumeLayout(false);
@@ -174,7 +174,7 @@
 
         #endregion
 
-        private Label label1;
+        private Label lblTitle;
         private Label lblName;
         private Label lblID;
         private Label lblCitizen;

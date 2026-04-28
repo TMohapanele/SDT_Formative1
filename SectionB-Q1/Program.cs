@@ -5,12 +5,12 @@
         List<Resident> residents = new List<Resident>();
         UtilitiesManager manager = new UtilitiesManager();
 
-        Console.Write("Enter number of residents: ");
+        Console.Write("ENTER THE NUMBER OF RESIDENT REPORTS: ");
         int numResidents = int.Parse(Console.ReadLine());
 
         for (int i = 0; i < numResidents; i++)
         {
-            Console.WriteLine($"\nResident {i + 1}"); //Heading
+            Console.WriteLine($"\n===RESIDENT {i + 1}==="); //Heading
 
             Console.Write("Name: ");
             string name = Console.ReadLine();
@@ -21,20 +21,20 @@
             Console.Write("Account Number: ");
             string acc = Console.ReadLine();
 
-            Console.Write("Monthly Usage: ");
+            Console.Write("Monthly Usage (khW/ litres): ");
             double usage = double.Parse(Console.ReadLine());
 
             residents.Add(new Resident(name, address, acc, usage));
         }
 
-        Console.Write("\nEnter number of service requests: ");
+        Console.Write("\nENTER NUMBER OF SERVICE REQUESTS: ");
         int numRequests = int.Parse(Console.ReadLine());
 
         for (int i = 0; i < numRequests; i++)
         {
-            Console.WriteLine($"\nService Request {i + 1}"); 
+            Console.WriteLine($"\n===Service Request {i + 1}==="); 
 
-            Console.Write("Request Type: ");
+            Console.Write("Maintenance Request Type: ");
             string type = Console.ReadLine();
 
             Console.Write("Priority (1-5): ");
@@ -51,5 +51,7 @@
 
         manager.DisplayQue();
         manager.ProcessRequests();
+
+        Console.WriteLine("THANK YOU FOR USING EMFULENI'S MUNICIPALITY SERVICE SERVICE DESK.");
     }
 }

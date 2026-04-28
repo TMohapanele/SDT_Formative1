@@ -14,7 +14,7 @@ public class UtilitiesManager
 
     public void DisplayQue()
     {
-        Console.WriteLine("\n=== SERVICE REQUEST QUEUE ===");
+        Console.WriteLine("\n=== MUNICIPAL SERVICE REQUEST QUEUE ===");
         foreach (var request in Requests)
         {
             Console.WriteLine($"{request.RequestType} | Urgency: {request.CalculateUrgency()}");
@@ -25,7 +25,7 @@ public class UtilitiesManager
     {
         foreach (var request in Requests)
         {
-            Console.WriteLine("\nProcessing Request...");
+            Console.WriteLine("\nPROCESSING RESULTS...");
             Console.WriteLine($"Resident: {request.Resident.Name}");
             Console.WriteLine($"Request Type: {request.RequestType}");
             Console.WriteLine($"Urgency Score: {request.CalculateUrgency()}");
