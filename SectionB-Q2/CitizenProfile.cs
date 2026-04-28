@@ -1,27 +1,27 @@
 ﻿using System;
-using System.Web;
 public class CitizenProfile
 {
     public string FullName { get; set; }
-    public int IDNumber { get; set; }
+    public string IDNumber { get; set; }
     public int Age { get; set; }
     public string CitizenshipStatus { get; set; }
 
-    public CitizenProfile(string name, int id, int age, string status)
+    public CitizenProfile(string name, string id, int age, string status)
     {
         FullName = name;
         IDNumber = id;
-        Age = age;
+        Age = CalculateAge(); //calculate automatically from ID
         CitizenshipStatus = status;
     }
 
     private int CalculateAge()
     {
+        //extracts birthday from ID
         int year = int.Parse(IDNumber.Substring(0, 2));
         int month = int.Parse(IDNumber.Substring(2, 2));
         int day = int.Parse(IDNumber.Substring(4, 2));
         
-        int fullYear = (year > 25) ? 1900 + year : 2000 + year; // Assuming current year is 2025
+        int fullYear = (year > 26) ? 1900 + year : 2000 + year; // Assuming current year is 2026
         DateTime birthDate = new DateTime(fullYear, month, day);
         int age = DateTime.Now.Year - birthDate.Year;
 
