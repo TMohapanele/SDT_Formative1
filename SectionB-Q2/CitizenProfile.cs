@@ -6,7 +6,7 @@ public class CitizenProfile
     public int Age { get; set; }
     public string CitizenshipStatus { get; set; }
 
-    public CitizenProfile(string name, string id, int age, string status)
+    public CitizenProfile(string name, string id, string status)
     {
         FullName = name;
         IDNumber = id;

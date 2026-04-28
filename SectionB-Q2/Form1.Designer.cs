@@ -102,7 +102,7 @@
             // 
             btnValidate.BackColor = Color.Teal;
             btnValidate.ForeColor = SystemColors.Control;
-            btnValidate.Location = new Point(156, 236);
+            btnValidate.Location = new Point(174, 236);
             btnValidate.Name = "btnValidate";
             btnValidate.Size = new Size(94, 29);
             btnValidate.TabIndex = 7;
@@ -116,23 +116,22 @@
             lblisValid.BackColor = Color.AntiqueWhite;
             lblisValid.Location = new Point(174, 268);
             lblisValid.Name = "lblisValid";
-            lblisValid.Size = new Size(50, 20);
+            lblisValid.Size = new Size(0, 20);
             lblisValid.TabIndex = 8;
-            lblisValid.Text = "label5";
             // 
             // txtOutput
             // 
-            txtOutput.Location = new Point(93, 305);
+            txtOutput.Location = new Point(112, 284);
             txtOutput.Multiline = true;
             txtOutput.Name = "txtOutput";
-            txtOutput.Size = new Size(211, 114);
+            txtOutput.Size = new Size(231, 131);
             txtOutput.TabIndex = 9;
             // 
             // btnGenerate
             // 
             btnGenerate.BackColor = Color.Teal;
             btnGenerate.ForeColor = SystemColors.Control;
-            btnGenerate.Location = new Point(133, 425);
+            btnGenerate.Location = new Point(149, 421);
             btnGenerate.Name = "btnGenerate";
             btnGenerate.Size = new Size(128, 29);
             btnGenerate.TabIndex = 10;
